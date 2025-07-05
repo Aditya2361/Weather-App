@@ -65,7 +65,7 @@ const Weather = () => {
       return;
     }
   try {
-    const url = `http://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_WEATHER_API_KEY}&q=${city}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_WEATHER_API_KEY}&q=${city}`;
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
